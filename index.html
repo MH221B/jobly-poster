@@ -90,7 +90,11 @@ table.cs td.so{background:#f0fdf4;border-left:1.7mm solid #10b981;color:#065f46;
 .img-grid2{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:2.8mm;flex:1;min-height:0}
 .img-cell{background:#f8fafc;border-radius:2.1mm;overflow:hidden;display:flex;flex-direction:column;border:0.4mm solid #e2e8f0}
 .img-cell .iw{flex:1;overflow:hidden;display:flex;align-items:center;justify-content:center;min-height:0;background:#fff}
+.img-cell .iw.extract-cv-stage{background:linear-gradient(90deg,#c6cbd4,#c9ced7)}
 .img-cell .iw img{width:100%;height:100%;object-fit:cover}
+.img-cell .iw img.extract-cv-full{object-fit:contain;transform:scale(1.35);transform-origin:center center}
+.img-cell .iw img.ai-interview-prep-zoom{transform:scale(1.35);transform-origin:center center}
+.img-cell .iw img.pre-shortlist-crop{object-position:var(--pre-shortlist-x,50%) center}
 .img-cell .strip{padding:2.1mm 2.8mm;font-size:4.2mm;font-weight:700;color:#fff;letter-spacing:.1mm;text-transform:uppercase;flex-shrink:0;text-align:center;background:#6d28d9}
 .img-cell.teal .strip{background:#0d9488}
 .mobile-frame{width:51mm;height:90mm;background:#0f172a;border-radius:7mm;padding:5.6mm 2mm;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin:2.8mm auto 0}
@@ -367,7 +371,7 @@ table.cs td.so{background:#f0fdf4;border-left:1.7mm solid #10b981;color:#065f46;
       <div class="card-body">
         <div class="img-grid2" style="grid-template-columns:1fr 1fr 1fr">
           <div class="img-cell">
-            <div class="iw"><img src="images/candidate_extractdata_4.png" alt="Trích xuất CV"></div>
+            <div class="iw extract-cv-stage"><img class="extract-cv-full" src="images/candidate_extractdata_4.png" alt="Trích xuất CV"></div>
             <div class="strip">Extract CV (PDF → JSON)</div>
           </div>
           <div class="img-cell">
@@ -375,11 +379,11 @@ table.cs td.so{background:#f0fdf4;border-left:1.7mm solid #10b981;color:#065f46;
             <div class="strip">Resume Review (AI)</div>
           </div>
           <div class="img-cell">
-            <div class="iw"><img src="images/candidate_aiprep_3.png" alt="AI Interview Prep"></div>
+            <div class="iw"><img class="ai-interview-prep-zoom" src="images/candidate_aiprep_3.png" alt="AI Interview Prep"></div>
             <div class="strip">AI Interview Prep</div>
           </div>
           <div class="img-cell">
-            <div class="iw"><img src="images/employer_postjob_6.png" alt="Pre-shortlist"></div>
+            <div class="iw"><img class="pre-shortlist-crop" style="--pre-shortlist-x:64%" src="images/employer_postjob_6.png" alt="Pre-shortlist"></div>
             <div class="strip">Pre-shortlist AI</div>
           </div>
           <div class="img-cell">
