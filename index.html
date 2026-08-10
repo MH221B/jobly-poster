@@ -63,6 +63,7 @@ body{background:#f8fafc;color:#1e1b4b;font-family:'Roboto','Segoe UI',sans-serif
 .section-label{font-size:5.1mm;font-weight:700;color:#4c1d95;letter-spacing:.3mm;text-transform:uppercase;display:flex;align-items:center;gap:2.1mm;margin-top:1.4mm}
 .section-label.rose{color:#f43f5e}
 .section-label.emerald{color:#10b981}
+.section-label.subsection{font-size:4.2mm;letter-spacing:.2mm;margin-top:.7mm}
 .section-label::after{content:'';flex:1;height:0.6mm;background:#e9d5ff}
 .callout{background:#faf5ff;border-left:2.3mm solid #6d28d9;padding:2.5mm 3.5mm;color:#4c1d96;font-size:4.2mm;border-radius:0 2.1mm 2.1mm 0;line-height:1.3}
 
@@ -200,11 +201,22 @@ table.cs td.so{background:#f0fdf4;border-left:1.7mm solid #10b981;color:#065f46;
           <div class="stat-mini teal"><div class="n">2</div><div class="t">Nền tảng</div></div>
         </div>
         <div class="section-label rose">Thực trạng</div>
-        <ul class="bullet-list rose">
-          <li>Sinh viên mới ra trường gặp khó khăn khi tối ưu hồ sơ (CV) và định hướng nghề nghiệp.</li>
-          <li>Nhà tuyển dụng quá tải với hàng nghìn hồ sơ, đánh giá cảm tính, lãng phí nguồn lực.</li>
-          <li>Các nền tảng hiện tại vận hành khép kín, thiếu tương tác động, chưa cá nhân hóa sâu.</li>
-        </ul>
+        <div class="bullet-cols">
+          <div>
+            <div class="section-label subsection rose">Ứng viên</div>
+            <ul class="bullet-list rose">
+              <li>Khó biết CV đã đủ tốt chưa và vì sao một công việc phù hợp hoặc không phù hợp.</li>
+              <li>Thiếu công cụ luyện phỏng vấn theo từng JD; CV thiếu nhất quán về ngôn ngữ, định dạng và phản hồi chuyên nghiệp.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="section-label subsection rose">Nhà tuyển dụng</div>
+            <ul class="bullet-list rose">
+              <li>Ngập trong CV; sàng lọc thủ công chậm, dễ chủ quan; câu hỏi sàng lọc thường copy-paste và thiếu công bằng.</li>
+              <li>Soạn bộ câu hỏi phỏng vấn theo từng vị trí tốn thời gian; nền tảng đóng khiến khó tích hợp AI vào quy trình hiện tại.</li>
+            </ul>
+          </div>
+        </div>
         <div class="section-label">Mục tiêu</div>
         <ul class="bullet-list">
           <li><span class="label-purple">Quy trình tuyển dụng đầy đủ:</span> Tài khoản, đăng tin, tìm việc, ứng tuyển, nhắn tin.</li>
