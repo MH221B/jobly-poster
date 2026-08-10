@@ -87,6 +87,7 @@ table.cs td.so{background:#f0fdf4;border-left:1.7mm solid #10b981;color:#065f46;
 /* ===== IMAGES ===== */
 .img-full{width:100%;flex:1;display:flex;align-items:center;justify-content:center;background:#f8fafc;border-radius:2.1mm;overflow:hidden;min-height:0;border:0.4mm solid #e2e8f0}
 .img-full img{width:100%;height:100%;object-fit:contain}
+.img-full.architecture-stage{background:#fff;border:0.5mm solid #cbd5e1}
 .img-grid2{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:2.8mm;flex:1;min-height:0}
 .img-cell{background:#f8fafc;border-radius:2.1mm;overflow:hidden;display:flex;flex-direction:column;border:0.4mm solid #e2e8f0}
 .img-cell .iw{flex:1;overflow:hidden;display:flex;align-items:center;justify-content:center;min-height:0;background:#fff}
@@ -436,7 +437,7 @@ table.cs td.so{background:#f0fdf4;border-left:1.7mm solid #10b981;color:#065f46;
           <div class="stat-mini amber"><div class="n">3</div><div class="t">Gateways</div></div>
           <div class="stat-mini teal"><div class="n">21</div><div class="t">MCP Tools</div></div>
         </div>
-        <div class="img-full" style="flex:0 0 55%"><img src="images/overview-architecture-joblyai.png" alt="Sơ đồ kiến trúc"></div>
+        <div class="img-full architecture-stage" style="flex:0 0 55%"><img src="images/overview-architecture-joblyai.png" alt="Sơ đồ kiến trúc"></div>
         <ul class="bullet-list" style="font-size:4.5mm">
           <li><b>Mạng công cộng:</b> Browser (Next.js) + Mobile (Expo) → Cloud Load Balancing &amp; Cloud DNS.</li>
           <li><b>Tầng ứng dụng (Cloud Run):</b> Frontend Next.js (BFF + SSR) + Backend NestJS (REST + 3 WebSocket gateway + MCP server).</li>
